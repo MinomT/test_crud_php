@@ -35,6 +35,7 @@ $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         <th scope="col">Gender</th>
         <th scope="col">Date Of Birth</th>
         <th scope="col">Address</th>
+        <th scope="col">Address</th>
         <th scope="col">Phone Number</th>
         <th scope="col">Employee Image</th>
       </tr>
@@ -53,6 +54,9 @@ $products = $statement->fetchAll(PDO::FETCH_ASSOC);
           </td>
           <td>
             <?php echo $pro['dob'] ?>
+          </td>
+          <td>
+            <?php echo $pro['address'] ?>
           </td>
           <td>
             <?php echo $pro['address'] ?>
